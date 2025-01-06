@@ -2,7 +2,7 @@ import { AppBar, Toolbar, Typography, Button, Tabs, Tab, Divider, Box, CardMedia
 import { PhoneRounded, Place } from '@mui/icons-material';
 import { Link } from "react-router-dom";
 
-function Header() {
+function NavBar() {
   const tabs = {
     color: 'white'
   }
@@ -59,4 +59,4 @@ function Header() {
     )
   }
   
-  export default Header
+  export default NavBar
