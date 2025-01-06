@@ -1,19 +1,15 @@
-//import { useState } from 'react';
-import './App.css';
 import { AppBar, Toolbar, Typography, Button, Tabs, Tab, Divider, Box, CardMedia, Stack } from '@mui/material';
 import { PhoneRounded, Place } from '@mui/icons-material';
-import {BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function App() {
-
+function Header() {
   const tabs = {
     color: 'white'
   }
-
+  
   return (
     <>
-      <BrowserRouter>
-        <AppBar position="fixed" sx={{backgroundColor: '#11225A'}} elevation={10}>
+      <AppBar position="fixed" sx={{backgroundColor: '#11225A'}} elevation={10}>
         <Box sx={{backgroundColor: 'white',  height: '37px'}}>
           <Box sx={{height: '17px', display: 'flex', justifyContent: 'flex-end', gap: '10px', position: 'relative', top: '10px', right: '25px'}}>
           
@@ -41,10 +37,9 @@ function App() {
                 </Typography>
               </Stack>
             </Stack>
-  
           </Box>
-          
         </Box>
+
           <Toolbar sx={{height: '64px', display: 'flex', justifyContent: 'space-between'}}>
             <CardMedia variant='outlined' sx={{width: '149px', height: '45px', border: '2px solid whitesmoke', position: 'relative', left: '30px'}}
               image='mdplus logo 231110.jpg' title='mdplus logo'
@@ -60,19 +55,8 @@ function App() {
             <Button variant='contained' color='error' size='medium' >Book Appointment</Button>
           </Toolbar>
         </AppBar>
-
-      <Routes>
-        <Route path='/'/>
-        <Route path='/services'/>
-        <Route path='/policies'/>
-        <Route path='/news'/>
-        <Route path='/resources'/>
-        <Route path='/contact'/>
-      </Routes>
-
-      </BrowserRouter>
-    </>
-  )
-}
-
-export default App
+      </>
+    )
+  }
+  
+  export default Header
