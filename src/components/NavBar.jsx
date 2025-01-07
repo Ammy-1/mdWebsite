@@ -20,7 +20,7 @@ function NavBar() {
                 variant="body2"
                 sx={{color:  '#11225A'}}
                 > 
-                  65 Howard Rd, Padstow 
+                  65 Howard Rd, Padstow 2211
                 </Typography>
 
               </Stack>
@@ -41,7 +41,7 @@ function NavBar() {
         </Box>
 
           <Toolbar sx={{height: '64px', display: 'flex', justifyContent: 'space-between'}}>
-            <CardMedia variant='outlined' sx={{width: '149px', height: '45px', border: '2px solid whitesmoke', position: 'relative', left: '30px'}}
+            <CardMedia variant='outlined' sx={{minWidth: '149px', height: '45px', border: '2px solid whitesmoke', position: 'relative', left: '30px'}}
               image='mdplus logo 231110.jpg' title='mdplus logo'
             />
               <Tabs sx={{position: 'relative', left: '20px', top: '7px'}}>
