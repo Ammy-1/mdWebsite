@@ -1,6 +1,7 @@
-import { AppBar, Toolbar, Typography, Button, Tabs, Tab, Divider, Box, CardMedia, Stack } from '@mui/material';
+import { AppBar, Toolbar, Typography, Tabs, Tab, Divider, Box, CardMedia, Stack } from '@mui/material';
 import { PhoneRounded, Place } from '@mui/icons-material';
 import { Link } from "react-router-dom";
+import BookBtn from './BookBtn';
 
 function NavBar() {
   const tabs = {
@@ -52,7 +53,7 @@ function NavBar() {
                 <Tab style={tabs} label="Resources"component={Link} to='/resources'/>
                 <Tab style={tabs} label="Contact Us" component={Link} to='/contact'/> 
               </Tabs>
-            <Button variant='contained' color='error' size='medium' >Book Appointment</Button>
+            <BookBtn size='medium'/>
           </Toolbar>
         </AppBar>
       </>
