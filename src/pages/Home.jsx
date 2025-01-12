@@ -1,11 +1,10 @@
-import {Typography, Button, Divider, Box, List, ListItem, TableRow, TableCell, Table, Paper } from '@mui/material';
+import {Typography, Button, Divider, Box, List, ListItem, TableRow, TableCell, Table, Paper, TableHead } from '@mui/material';
 import BookBtn from '../components/BookBtn';
 import NotifCard from '../components/NotifCard';
 import notifs from '../notifsMaster.json'
 
 
 function Home() {
-    console.log(notifs.length);
   
   return (
     <>
@@ -18,11 +17,12 @@ function Home() {
         <Box sx={{width: '40%',  height:'inherit', display: 'flex', flexDirection: 'column', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start' }}>
           <BookBtn size='large'/>
         </Box>
+       
       </Box>
 
       
 
-      <Box sx={{backgroundColor: '#F2F2F2', width: '100vw', height: 'auto', display: 'flex', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'flex-start', paddingTop: '60px'}}> 
+      <Box sx={{backgroundColor: '#F2F2F2', width: '100vw', height: 'auto', display: 'flex', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'center', justifyContent: 'flex-start', paddingTop: '70px'}}> 
         <Typography variant='h6' sx={{color: '#000', fontWeight: 'bold'}}>
             At MDPlus Clinic, we are committed to providing high quality care for all of our patients.
         </Typography>
@@ -31,11 +31,22 @@ function Home() {
           Dr Tam Pham has over 25 years experience in all aspects of general practice, specialising in paediatrics, sports medicine and men’s health. Appointments can be made either through phone bookings to <span style={{color: 'red'}}>(02) 9792 6655 </span>or our website.
         </Typography>
         
-        <Box>
-          <img src="./AGPAL Accredited Symbol_PNG.png" alt="AGPAL accreditation" style={{width: '385px', marginTop: '30px'}}/>
-          <Typography variant='body2' sx={{color: '#11225A', fontWeight: 'bold'}}>
-            MDPlus Clinic is an AGPAL accredited Medical Centre.  
-          </Typography>
+        <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+          <Box>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6619.130184179823!2d151.03154179999999!3d-33.952312299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bec4474e049d%3A0x8d124e5d6cbab8bd!2sMDPlus%20Medical%20Clinic%20Padstow!5e0!3m2!1sen!2sau!4v1736653520410!5m2!1sen!2sau"
+              width="375" 
+              height="300"  
+              loading="lazy" 
+            />
+          </Box>
+
+          <Box sx={{textAlign: 'end'}}>
+            <img src="./AGPAL Accredited Symbol_PNG.png" alt="AGPAL accreditation" style={{width: '385px', marginTop: '30px'}}/>
+            <Typography variant='body2' sx={{color: '#11225A', fontWeight: 'bold'}}>
+              MDPlus Clinic is an AGPAL accredited Medical Centre.  
+            </Typography>
+          </Box>
+  
         </Box>
        
       </Box>
@@ -74,6 +85,7 @@ function Home() {
         <Paper sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px', width: '20%'}}>
             <Typography variant='h3' sx={{color: '#000', paddingBottom: '20px'}}>Opening Hours</Typography>
             <Table sx={{color: 'black'}}>
+            <TableHead>
               <TableRow>
                 <TableCell align="left" sx={{fontWeight: 'bold'}}>Monday</TableCell>
                 <TableCell align="left">8:30am-6pm</TableCell>
@@ -102,17 +114,22 @@ function Home() {
                 <TableCell align="left" sx={{fontWeight: 'bold'}}>Sunday</TableCell>
                 <TableCell align="left">9am-11:30am*</TableCell>
               </TableRow>
+              
+
+              </TableHead>
             </Table>
           <Typography variant='body2' sx={{paddingTop: '20px'}}>* We are closed on the first and last Sundays of each month </Typography>
           </Paper>
 
-          <Paper sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px', overflow: 'clip'}}>
+          <Paper sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px' }}>
             <Typography variant='h3' sx={{marginBottom: '20px'}}>News</Typography>
-            {(notifs.length > 0) ? (
-              notifs.map((notif, index) => (<NotifCard key={index} date={notif.date} heading={notif.heading} content={notif.content}/>))
-            ) : (
-              <Typography variant='body1'> No news yet</Typography>
-            )}
+            <Box sx={{ height: '60vh', overflow: 'scroll', bgcolor: 'whitesmoke'}} boxShadow={5}>
+              {(notifs.length > 0) ? (
+                notifs.map((notif, index) => (<NotifCard key={index} date={notif.date} heading={notif.heading} content={notif.content}/>))
+              ) : (
+                <Typography variant='body1'> No news yet</Typography>
+              )}
+            </Box>
            
             
             

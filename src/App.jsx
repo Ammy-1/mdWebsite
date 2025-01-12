@@ -18,7 +18,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/services'/>
-          <Route path='/policies'/>
           <Route path='/news'/>
           <Route path='/resources'/>
           <Route path='/contact'/>

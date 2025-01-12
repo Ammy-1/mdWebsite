@@ -1,4 +1,5 @@
-import { AppBar, Toolbar, Typography, Tabs, Tab, Divider, Box, CardMedia, Stack } from '@mui/material';
+import { useState } from 'react';
+import { AppBar, Toolbar, Typography, Tabs, Tab, Divider, Box, CardMedia, Stack, Menu, MenuItem, Fade } from '@mui/material';
 import { PhoneRounded, Place } from '@mui/icons-material';
 import { Link } from "react-router-dom";
 import BookBtn from './BookBtn';
@@ -7,6 +8,15 @@ function NavBar() {
   const tabs = {
     color: 'white'
   }
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleHover = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   
   return (
     <>
@@ -45,10 +55,29 @@ function NavBar() {
             <CardMedia variant='outlined' sx={{minWidth: '149px', height: '45px', border: '2px solid whitesmoke', position: 'relative', left: '30px'}}
               image='mdplus logo 231110.jpg' title='mdplus logo'
             />
-              <Tabs sx={{position: 'relative', left: '20px', top: '7px'}}>
+              <Tabs sx={{position: 'relative', top: '7px'}}>
                 <Tab style={tabs} label="Home" component={Link} to='/'/>
-                <Tab style={tabs} label="Services" component={Link} to='/services' /> 
-                <Tab style={tabs} label="Policies" component={Link} to='/policies' />
+                <Tab style={tabs} label="Services" component={Link} to='/services' onMouseEnter={handleHover} /> 
+                  <Menu
+                    id="basic-menu"
+                    anchorEl={anchorEl}
+                    open={open}
+                    TransitionComponent={Fade}
+                    
+                    MenuListProps={{
+                      'aria-labelledby': 'basic-button',
+                      'dense': 'true',
+                      'onMouseLeave': handleClose
+                    }}
+                    sx={{width: '12%'}}
+                    
+                  >
+                    <MenuItem onClick={handleClose}>Appointments</MenuItem>
+                    <MenuItem onClick={handleClose}>Fees</MenuItem>
+                    <MenuItem onClick={handleClose}>Policies</MenuItem>
+                    
+                  </Menu>
+
                 <Tab style={tabs} label="News" component={Link} to='/news'/> 
                 <Tab style={tabs} label="Resources"component={Link} to='/resources'/>
                 <Tab style={tabs} label="Contact Us" component={Link} to='/contact'/> 
