@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx';
 import Notices from './pages/Notices.jsx';
 import Resources from './pages/Resources.jsx';
 import ContactUs from './pages/ContactUs.jsx';
+import Appointments from './pages/Appointments.jsx';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Home/>}/>
-            <Route path='/services/appointments'/>
+            <Route path='/services/appointments' element={ <Appointments/>}/>
             <Route path='/services/fees'/>
             <Route path='/services/policies'/>
             <Route path='/notices' element={<Notices/>}/>

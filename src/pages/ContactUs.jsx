@@ -7,7 +7,7 @@ function ContactUs() {
   return (
       
     <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column', width: 'calc(100% - 100px)', margin: '100px 0px 50px', position: 'relative', left: '50px' }}> 
-      <Typography variant='h2' sx={{padding: '50px'}}> Contact Us </Typography>
+      <Typography variant='h3' sx={{padding: '50px'}}> Contact Us </Typography>
       <Box sx={{ display: 'flex', gap: '50px', flexGrow: 1, flexWrap: 'wrap'}}>
         <Box sx={{ display: 'flex', alignItems: 'stretch', gap: '30px', flexDirection: 'column', width: '50%', flexGrow: 2}}>
           <Paper sx={{padding: '20px', }}>
@@ -47,7 +47,7 @@ function ContactUs() {
           </Paper>
           <Paper sx={{padding: '20px'}}>
             <Typography variant='h6' sx={{paddingBottom: '10px'}}> Telephone access </Typography>
-            <Typography variant='body2' > GPs in the practice may be contacted during normal opening hours. If the the GP is with a patient, a message will be taken and the reception staff will advise when it is likely that the GP will be able to return your call. In an emergency, your call will always be put through to a GP</Typography>
+            <Typography variant='body1' > GPs in the practice may be contacted during normal opening hours. If the the GP is with a patient, a message will be taken and the reception staff will advise when it is likely that the GP will be able to return your call. In an emergency, your call will always be put through to a GP</Typography>
           </Paper>
         </Box>
        

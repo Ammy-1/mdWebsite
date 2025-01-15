@@ -79,7 +79,7 @@ function Home() {
                   <ListItem sx={{ display: 'list-item' }}>Skin checks</ListItem>
                 </List>
               </Box>
-              <Button variant='contained' color='error'>Learn More</Button>
+              <Button variant='contained' color='error' component={Link} to='/services/appointments'>Learn More</Button>
             </Box>
           </Paper>
           
@@ -100,7 +100,9 @@ function Home() {
                     position: 'relative',
                     top: '50%',
                     left: '50%',
-                    transform: 'translate(-15%, -50%)',}}>
+                    transform: 'translate(-50%, -50%)', 
+                    textAlign: 'center', 
+                    width: '100%'}}>
                    No notices yet
                 </Typography>
                 )}

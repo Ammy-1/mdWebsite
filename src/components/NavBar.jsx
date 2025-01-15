@@ -79,7 +79,7 @@ function NavBar() {
 
           <Toolbar sx={{height: '64px', display: 'flex', justifyContent: 'space-between'}}>
             <CardMedia variant='outlined' sx={{minWidth: '149px', height: '45px', border: '2px solid whitesmoke', position: 'relative', left: '30px'}}
-              image='mdplus logo 231110.jpg' title='mdplus logo'
+              image='mdplus logo 231110.jpg' title='mdplus logo' 
             />
               <Tabs sx={{position: 'relative', '& .MuiTabs-indicator': {backgroundColor: 'white'}, color: 'inherit', height: '65px'}}  value={value} >
                 <Tab style={tabs} label="Home" component={Link} to='/' tabIndex={0} />
