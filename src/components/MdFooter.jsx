@@ -20,12 +20,13 @@ function MdFooter() {
         justifyContent: 'space-evenly',
         alignContent: 'center',
         gap: '20px',
-        padding: '10px'
+        padding: '10px',
+        ['@media (max-width: 1025px)']: {justifyContent: 'center'}
       }}>
           <Typography variant='body1' sx={{color: 'white', fontWeight: 'bold'}}>MDPlus Clinic</Typography>
-          <Divider orientation='vertical' sx={{ borderColor: 'white', height: '30px', borderWidth: '1px', borderRight: 'none', borderTop: 'none', borderBottom: 'none'}} flexItem/> 
+          <Divider orientation='vertical' sx={{ borderColor: 'white', height: '30px', borderWidth: '1px', borderRight: 'none', borderTop: 'none', borderBottom: 'none', ['@media (max-width: 1025px)']: {visibility: 'hidden'}}} flexItem/> 
           
-          <Box sx={{display: 'flex', alignContent: 'center', justifyContent: 'center', gap: '50px', flexWrap: 'wrap'}}>
+          <Box sx={{display: 'flex', alignContent: 'center', justifyContent: 'center', gap: '50px', flexWrap: 'wrap', ['@media (max-width: 875px)']: {width: '500px'}, ['@media (max-width: 450px)']: {justifyContent: 'flex-start', gap: '10px'}}}>
             <Box sx={{display: 'flex', alignItems: 'center', gap: '15px'}}>
               <Place sx={{  color: 'white', width: '18px', position: 'relative', bottom: '1px'}} />
               <Box>

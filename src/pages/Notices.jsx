@@ -1,13 +1,18 @@
-import {  Typography, Box, Card } from '@mui/material';
+import {  Typography, Box, Card, Stack } from '@mui/material';
 import notifs from '../notifsMaster.json';
 import NotifCard from '../components/NotifCard';
+import { Announcement } from '@mui/icons-material';
 
 function Notices() {
   
     return (
       <Box sx={{ display: 'flex',  flexDirection: 'column', marginTop: '100px', }}>
         <Box sx={{backgroundColor: 'error.main', color: 'white', padding: '50px 0px', width: '100vw',  display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-          <Typography variant='h3'> Notices </Typography>
+         
+          <Stack direction='row' gap='20px'>
+              <Announcement sx={{width: '50px', height: 'auto', position: 'relative', bottom: '0px'}}/>
+              <Typography variant='h3'> Notices </Typography>
+            </Stack>
           <Typography variant='body1'>Stay up to date with MDplus Clinic.</Typography>
          
         </Box>

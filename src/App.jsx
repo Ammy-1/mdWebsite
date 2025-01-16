@@ -9,6 +9,8 @@ import Notices from './pages/Notices.jsx';
 import Resources from './pages/Resources.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import Appointments from './pages/Appointments.jsx';
+import Policies from './pages/Policies.jsx';
+import Fees from './pages/Fees.jsx';
 
 function App() {
 
@@ -22,9 +24,9 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Home/>}/>
-            <Route path='/services/appointments' element={ <Appointments/>}/>
-            <Route path='/services/fees'/>
-            <Route path='/services/policies'/>
+            <Route path='/services/appointments' element={<Appointments/>}/>
+            <Route path='/services/fees' element={<Fees/>}/>
+            <Route path='/services/policies' element={<Policies/>}/>
             <Route path='/notices' element={<Notices/>}/>
             <Route path='/resources' element={<Resources/>}/>
             <Route path='/contact' element={<ContactUs/>}/>

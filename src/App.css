@@ -6,3 +6,9 @@ body, html {
   color: #000;
   overflow-x: hidden;
 }
+
+@media (max-width: 600px) {
+  .MuiTableCell-root {
+    font-size: 0.56rem !important; 
+  }
+}
