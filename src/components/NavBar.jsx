@@ -179,7 +179,7 @@ function NavBar() {
                     <MenuItem onClick={handleMobileClose} component={Link} to='/contact'>Contact Us</MenuItem>
                     <MenuItem onClick={handleMobileClose} component={Link} to='/notices'>Notices</MenuItem>
                     <MenuItem onClick={handleMobileClose} component={Link} to='/resources'>Resources</MenuItem>
-                    <MenuItem onClick={handleMobileClose} ><BookBtn size='small'/></MenuItem>
+                    <MenuItem onClick={handleMobileClose} ><BookBtn size='large'/></MenuItem>
                     
                 </Menu>
             </IconButton>
