@@ -1,11 +1,11 @@
-import {Table, TableCell, TableHead, TableRow, Typography} from '@mui/material';
+import {Table, TableBody, TableCell, TableRow, Typography} from '@mui/material';
 
 function OpeningHrs() {
   
   return (
     <>
       <Table sx={{color: 'black'}}>
-        <TableHead>
+        <TableBody>
           <TableRow>
             <TableCell align="left" sx={{fontWeight: 'bold'}}>Monday</TableCell>
             <TableCell align="left">8:30am-6pm</TableCell>
@@ -34,7 +34,7 @@ function OpeningHrs() {
             <TableCell align="left" sx={{fontWeight: 'bold'}}>Sunday*</TableCell>
             <TableCell align="left">9am-11:30am</TableCell>
           </TableRow>
-        </TableHead>
+        </TableBody>
       </Table>
       <Typography variant='body2' sx={{paddingTop: '20px', color: 'error.main'}}>* We are closed on the first and last Sundays of each month </Typography>
       <Typography variant='body2' sx={{paddingTop: '10px',}}>For care outside of normal opening hours, call </Typography>

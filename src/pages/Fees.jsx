@@ -1,4 +1,4 @@
-import { Box, Paper, Table, TableHead, TableRow, TableCell, Typography, Stack, TableBody, TableContainer} from '@mui/material';
+import { Box, Paper, Table, TableHead, TableRow, TableCell, Typography, Stack, TableBody} from '@mui/material';
 import { AccountBalanceWallet, PointOfSale, } from '@mui/icons-material';
 
 function Fees() {
@@ -35,7 +35,7 @@ function Fees() {
               </Stack>
 
             <Box sx={{maxHeight: '1100px', overflowY: 'auto', overflowX: 'auto', width: 'inherit'}}>
-              <Table stickyHeader dense sx={{tableLayout: 'fixed', width: '100%',}} >
+              <Table stickyHeader dense='true' sx={{tableLayout: 'fixed', width: '100%',}} >
                 <TableHead >
                   <TableRow >
                     <TableCell align="left" sx={{fontWeight: 'bold' , backgroundColor: '#11225A', color: 'white' }}>Item</TableCell>
@@ -45,7 +45,6 @@ function Fees() {
                     <TableCell align="left" sx={{fontWeight: 'bold', backgroundColor: '#11225A', color: 'white'}}>Out of Pocket Cost</TableCell>
                   </TableRow>
                 </TableHead>
-                <TableContainer></TableContainer>
                 <TableBody>
                   <TableRow>
                     <TableCell align="left">721</TableCell>

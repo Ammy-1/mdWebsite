@@ -12,10 +12,10 @@ function Home() {
   return (
     <>
       <Box sx={{backgroundColor: '#ddd', width: '100vw', height: '400px', marginTop: '100px', display: 'flex', justifyContent: 'space-between', flexGrow: '1', flexWrap: 'wrap', }}> 
-        <Box sx={{ display: 'flex',  width: 'calc(100% - 100px)', margin: '100px 0px 50px', position: 'relative', left: '50px', gap: '30px' }}> 
+        <Box sx={{ display: 'flex',  width: 'calc(100% - 100px)', position: 'relative', left: '50px', gap: '100px' }}> 
           <Box sx={{ width: '50%', height:'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}>
-            <Typography variant='h4' sx={{['@media (max-width: 500px)']: {fontSize: '1.5rem'}}} >Welcome to</Typography>
-            <Typography variant='h3' >MDplus Clinic</Typography>
+            <Typography variant='h3' sx={{['@media (max-width: 500px)']: {fontSize: '1.5rem'}}} >Welcome to</Typography>
+            <Typography variant='h2' >MDplus Clinic</Typography>
           </Box>
 
           <Box sx={{width: '40%',  height:'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', ['@media (max-width: 1600px)']: {position: 'relative', right: '8px'}}}>
@@ -114,7 +114,6 @@ function Home() {
                 )}
             </Box>
            
-            
             
             <Button variant='outlined' sx={{marginTop: '20px'}} component={Link} to='/notices'>View All</Button>
           </Paper>
