@@ -71,7 +71,7 @@ function NavBar() {
     <>
       <AppBar position="fixed" sx={{backgroundColor: '#11225A'}} elevation={15}>
         <Box sx={{backgroundColor: 'white',  height: '37px'}}>
-          <Box sx={{height: '17px', display: 'flex', justifyContent: 'flex-end', gap: '10px', position: 'relative', top: '10px', right: '25px', ['@media (max-width: 450px)']: {gap: '5px', right: '40px'}}}>
+          <Box sx={{height: '17px', display: 'flex', justifyContent: 'flex-end', gap: '10px', position: 'relative', top: '10px', right: '25px', ['@media (max-width: 450px)']: {gap: '5px', right: '30px'}}}>
           
             <Stack direction='row' gap='20px' sx={{['@media (max-width: 450px)']: {gap: '10px'}}}>
               <Stack  direction='row' gap='15px' sx={{['@media (max-width: 450px)']: {gap: '5px'}}}>

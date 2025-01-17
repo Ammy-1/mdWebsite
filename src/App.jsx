@@ -11,6 +11,7 @@ import ContactUs from './pages/ContactUs.jsx';
 import Appointments from './pages/Appointments.jsx';
 import Policies from './pages/Policies.jsx';
 import Fees from './pages/Fees.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar/>
-
+        <ScrollToTop/>
         <Routes>
 
           <Route path='/' element={<Home/>}/>
