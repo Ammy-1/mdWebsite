@@ -12,13 +12,13 @@ function Home() {
   return (
     <>
       <Box sx={{backgroundColor: '#ddd', width: '100vw', height: '400px', marginTop: '100px', display: 'flex', justifyContent: 'space-between', flexGrow: '1', flexWrap: 'wrap', }}> 
-        <Box sx={{ display: 'flex',  width: 'calc(100% - 100px)', position: 'relative', left: '50px', gap: '100px' }}> 
-          <Box sx={{ width: '50%', height:'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end' }}>
-            <Typography variant='h3' sx={{['@media (max-width: 500px)']: {fontSize: '1.5rem'}}} >Welcome to</Typography>
-            <Typography variant='h2' >MDplus Clinic</Typography>
+        <Box sx={{ display: 'flex',  width: 'calc(100% - 100px)', position: 'relative', left: '50px', gap: '100px', ['@media (max-width: 900px)']: {gap: '30px'}, ['@media (max-width: 400px)']: {alignContent: 'center', gap: '10px'}, ['@media (max-width: 600px)']: {flexWrap: 'wrap'} }}> 
+          <Box sx={{ width: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', ['@media (max-width: 800px)']: {alignItems: 'flex-start'}, ['@media (max-width: 400px)']: {width: '100%', height: '100px'}, }}>
+            <Typography variant='h3' sx={{['@media (max-width: 900px)']: {fontSize: '1.5rem'}}} >Welcome to</Typography>
+            <Typography variant='h2' sx={{['@media (max-width: 900px)']: {fontSize: '2.5rem'}}}>MDplus Clinic</Typography>
           </Box>
 
-          <Box sx={{width: '40%',  height:'inherit', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', ['@media (max-width: 1600px)']: {position: 'relative', right: '8px'}}}>
+          <Box sx={{width: '40%',  display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', ['@media (max-width: 400px)']: {width: '100%', height: '100px'}, }}>
             <BookBtn size='large'/>
           </Box>
         </Box>
@@ -35,7 +35,7 @@ function Home() {
           Dr Tam Pham has over 25 years experience in all aspects of general practice, specialising in paediatrics, sports medicine and men’s health. Appointments can be made either through phone bookings to <span style={{color: '#d32f2f'}}>(02) 9792 6655 </span>or our website.
         </Typography>
         
-        <Box sx={{display: 'flex',  alignItems: 'center', flexWrap: 'wrap', gap: '80px'}}>
+        <Box sx={{display: 'flex',  alignItems: 'center', flexWrap: 'wrap', gap: '80px', justifyContent: 'center'}}>
           <Paper elevation={5}>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6619.130184179823!2d151.03154179999999!3d-33.952312299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bec4474e049d%3A0x8d124e5d6cbab8bd!2sMDPlus%20Medical%20Clinic%20Padstow!5e0!3m2!1sen!2sau!4v1736653520410!5m2!1sen!2sau"
               width="340" 
@@ -86,12 +86,12 @@ function Home() {
           </Paper>
           
         <Box sx={{display: 'flex', gap: '50px', width: '80vw', flexGrow: 1, flexWrap: 'wrap'}}>
-        <Paper elevation={10} sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px', width: '20%'}}>
+        <Paper elevation={10} sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px', width: '20%', minWidth: '225px', ['@media (max-width: 400px)']: {minWidth: '180px'} }}>
             <Typography variant='h4' sx={{color: '#000', paddingBottom: '20px'}}>Opening Hours</Typography>
             <OpeningHrs/>
           </Paper>
 
-          <Paper elevation={10} sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px' }}>
+          <Paper elevation={10} sx={{backgroundColor: 'white', display: 'flex', flexGrow: 1, flexDirection: 'column', padding: '50px', minWidth: '225px', ['@media (max-width: 400px)']: {minWidth: '180px'}  }}>
             <Stack direction='row' gap='20px'>
               <Announcement sx={{width: '30px', height: 'auto', position: 'relative', bottom: '10px'}}/>
               <Typography variant='h4' sx={{marginBottom: '20px'}}>Notices</Typography>

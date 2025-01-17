@@ -155,7 +155,7 @@ function NavBar() {
                       'dense': true,
                       
                     }}
-                    sx={{position: 'absolute', top: '22px', left: '15px', '& .MuiPaper-root': { borderTopLeftRadius: '0', borderTopRightRadius: '0'} }}
+                    sx={{position: 'absolute', top: '6px', left: '15px', '& .MuiPaper-root': { borderTopLeftRadius: '0', borderTopRightRadius: '0'} }}
                    
                   >
                     <MenuItem onClick={handleMobileClose} component={Link} to='/' >Home</MenuItem>

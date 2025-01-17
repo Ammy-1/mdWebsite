@@ -8,7 +8,7 @@ body, html {
 }
 
 @media (max-width: 600px) {
-  .MuiTableCell-root {
+  .fee-cell {
     font-size: 0.56rem !important; 
   }
 }
