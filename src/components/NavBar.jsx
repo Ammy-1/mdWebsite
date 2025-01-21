@@ -168,7 +168,7 @@ function NavBar() {
                           </Box>
                         </Stack>
                         {dropServices && (
-                          <Box sx={{backgroundColor: 'whitesmoke', width: '175px', height: 'auto'}}>
+                          <Box sx={{backgroundColor: 'whitesmoke', width: '225px', height: 'auto'}}>
                             <MenuItem onClick={handleMobileClose} component={Link} to='/services/appointments' >Appointments</MenuItem>
                             <MenuItem onClick={handleMobileClose} component={Link} to='/services/fees'>Fees</MenuItem>
                             <MenuItem onClick={handleMobileOpen} component={Link} to='/services/policies'>Policies</MenuItem>

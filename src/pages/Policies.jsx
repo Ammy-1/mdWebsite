@@ -17,7 +17,7 @@ function Policies() {
          
 
           <Typography sx={{marginBottom: '20px'}}>Your medical record is a confidential document. It is this practice&apos;s policy to maintain the security of personal health information at all times and to ensure that this information is only avaliable to authorised members of staff. </Typography>
-          <Typography>We abide by the 10 Nation Privacy Principles avaliable at: <span><Link to='https://www.oaic.gov.au/privacy/australian-privacy-principles'>www.privacy.gov.au/health/index.html</Link></span></Typography>
+          <Typography>We abide by the 10 Nation Privacy Principles avaliable at: <span><Link>www.privacy.gov.au/health/index.html</Link></span></Typography>
           
 
         </Paper>

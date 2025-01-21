@@ -11,9 +11,9 @@ function Home() {
   
   return (
     <>
-      <Box sx={{backgroundColor: '#ddd', width: '100vw', height: '400px', marginTop: '100px', display: 'flex', justifyContent: 'space-between', flexGrow: '1', flexWrap: 'wrap', }}> 
-        <Box sx={{ display: 'flex',  width: 'calc(100% - 100px)', position: 'relative', left: '50px', gap: '100px', ['@media (max-width: 900px)']: {gap: '30px'}, ['@media (max-width: 400px)']: {alignContent: 'center', gap: '10px'}, ['@media (max-width: 600px)']: {flexWrap: 'wrap'} }}> 
-          <Box sx={{ width: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', ['@media (max-width: 800px)']: {alignItems: 'flex-start'}, ['@media (max-width: 400px)']: {width: '100%', height: '100px'}, }}>
+      <Box sx={{backgroundImage: 'url(./homeimg.jpg)', backgroundRepeat: "no-repeat", backgroundSize: "cover", width: '100vw', height: '400px', marginTop: '100px', display: 'flex', justifyContent: 'space-between', flexGrow: '1', flexWrap: 'wrap', ['@media (max-width: 400px)']: {backgroundPositionX: '32%'}}}> 
+        <Box sx={{ display: 'flex',  width: 'inherit', position: 'relative', gap: '100px', padding: '0px 50px', ['@media (max-width: 900px)']: {gap: '30px'}, ['@media (max-width: 400px)']: {alignContent: 'center', gap: '10px'}, ['@media (max-width: 600px)']: {flexWrap: 'wrap'}, backdropFilter: 'saturate(60%)'}}> 
+          <Box sx={{ width: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', ['@media (max-width: 800px)']: {alignItems: 'flex-start'}, ['@media (max-width: 400px)']: {width: '100%', height: '100px'}}}>
             <Typography variant='h3' sx={{['@media (max-width: 900px)']: {fontSize: '1.5rem'}}} >Welcome to</Typography>
             <Typography variant='h2' sx={{['@media (max-width: 900px)']: {fontSize: '2.5rem'}}}>MDplus Clinic</Typography>
           </Box>
