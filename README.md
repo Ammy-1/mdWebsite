@@ -2,7 +2,7 @@
 This file contains the code for the MDPLUS clinic website. This website is a single page application (SPA) created using React. 
 
 ## Notices
-Notices are handled in the `notifsMaster.json` file. Initially, the file is empty and looks like this:
+Notices are handled in the `notifsMaster.json` file which can be found in the `src` folder. Initially, the file is empty and looks like this:
 
 ```
 [
