@@ -1,5 +1,5 @@
 import { Box, Paper, Stack, Typography} from '@mui/material';
-import {Place, PhoneRounded, Mail, Fax, PhoneInTalkRounded, ContactMail} from '@mui/icons-material'
+import {Place, PhoneRounded, Fax, PhoneInTalkRounded, ContactMail} from '@mui/icons-material'
 import OpeningHrs from '../components/OpeningHrs';
 
 function ContactUs() {
