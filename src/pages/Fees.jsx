@@ -49,7 +49,7 @@ function Fees() {
             Fees are payable at the time of consultation by cash, cheque, Mastercard or Visa. The AMA fee structure forms the basis of our billing policy and is displayed at the clinic&apos;s reception area
           </Typography>
           <Typography sx={{marginBottom: '10px',  textWrap: 'wrap'}}>
-            This practice bulk bills pensioners and Health Care card holders. Veterans may sign the service voucher. Sunday appointments have a gap fee of $25 (standard consultation) or $30 (long consultation). 
+            This practice bulk billschildren under 16 yrs old, pensioners and Health Care card holders. Veterans may sign the service voucher. Sunday appointments have a gap fee of $25 (standard consultation) or $30 (long consultation). 
           </Typography>
           <Typography sx={{marginBottom: '10px', fontWeight: 'bold'}}>
             If you have any difficulties with paying our fees, please discuss it with us.
@@ -225,7 +225,7 @@ function Fees() {
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">-</TableCell>
-                    <TableCell className='fee-cell' align="left">Forms & Assessments</TableCell>
+                    <TableCell className='fee-cell' align="left">Forms</TableCell>
                     <TableCell className='fee-cell' align="left">$44</TableCell>
                     <TableCell className='fee-cell' align="left">$0</TableCell>
                     <TableCell className='fee-cell' align="left">$44</TableCell>

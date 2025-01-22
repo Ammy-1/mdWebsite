@@ -205,6 +205,7 @@ function Home() {
                   <ListItem sx={{ display: 'list-item' }}>Care plans</ListItem>
                   <ListItem sx={{ display: 'list-item' }}>Family planning</ListItem>
                   <ListItem sx={{ display: 'list-item' }}>Worker’s Compensation</ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>Ear syringing</ListItem>
                 </List>
 
                 <List 
@@ -216,7 +217,8 @@ function Home() {
                   >
                   <ListItem sx={{ display: 'list-item' }}>Pregnancy tests</ListItem>
                   <ListItem sx={{ display: 'list-item' }}>Counselling</ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>Minor surgery</ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>Wound care</ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>Wound dressing</ListItem>
                   <ListItem sx={{ display: 'list-item' }}>Nutritional advice</ListItem>
                   <ListItem sx={{ display: 'list-item' }}>Sports medicine</ListItem>
                   <ListItem sx={{ display: 'list-item' }}>Skin checks</ListItem>

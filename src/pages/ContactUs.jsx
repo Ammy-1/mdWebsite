@@ -68,13 +68,6 @@ function ContactUs() {
                 <Typography variant='body2' sx={{fontWeight: 'bold'}}> Phone:</Typography>  
                 <Typography variant='body2'>(02) 9792 6655</Typography>
               </Stack>
-
-              <Stack  direction='row' gap='5px'>
-                <Mail sx={{ width: '18px', position: 'relative', bottom: '1px'}} />
-                <Typography variant='body2' sx={{fontWeight: 'bold'}}>Email:</Typography>  
-                <Typography variant='body2'>mdplus.reception@gmail.com</Typography>
-              </Stack>
-
              
               <Stack direction='row' gap='5px'>
                 <Fax sx={{ width: '18px', position: 'relative', bottom: '1px'}} />
@@ -88,7 +81,7 @@ function ContactUs() {
               <Typography variant='h5' sx={{paddingBottom: '20px'}}> Telephone Access </Typography>
             </Stack>
             <Typography variant='body1'>
-              GPs in the practice can be contacted during normal opening hours. If the the GP is with a patient, the reception staff will take your message and give you a timeframe for when the GP would be able to return your call. In an emergency, your call will always be put through to a GP.
+              GPs in the practice can be contacted during normal opening hours. If the the GP is with a patient, the reception staff will take your message and give you a timeframe for when the GP would be able to return your call. In an emergency, please call 000.
             </Typography>
           </Paper>
         </Box>

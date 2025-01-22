@@ -1,5 +1,5 @@
 import {Typography, Divider, Box } from '@mui/material';
-import { PhoneRounded, Place, Mail, Fax } from '@mui/icons-material';
+import { PhoneRounded, Place, Fax } from '@mui/icons-material';
 
 function MdFooter() {
   
@@ -38,7 +38,7 @@ function MdFooter() {
               borderRight: 'none', 
               borderTop: 'none', 
               borderBottom: 'none', 
-              ['@media (max-width: 1025px)']: {visibility: 'hidden'}
+              ['@media (max-width: 1025px)']: {display: 'none'}
             }} 
             flexItem
           /> 
@@ -47,15 +47,19 @@ function MdFooter() {
             sx={{
               display: 'flex', 
               alignContent: 'center', 
-              justifyContent: 'center', 
-              gap: '50px', 
+              justifyContent: 'space-evenly',  
+              gap: '100px', 
               flexWrap: 'wrap', 
-              ['@media (max-width: 875px)']: {width: '500px'}, 
+              ['@media (max-width: 875px)']: {
+                width: '500px', 
+                gap: '20px', 
+                justifyContent: 'center'
+              }, 
               ['@media (max-width: 450px)']: {
-                justifyContent: 'flex-start', 
-                gap: '10px',
+                justifyContent: 'space-evenly', 
                 paddingBottom:'30px', 
-                paddingLeft: '20px'
+                paddingLeft: '20px',
+                paddingRight: '10px'
               }
             }}
           >
@@ -99,25 +103,6 @@ function MdFooter() {
                 </Typography>  
                 <Typography variant='body2' sx={{color: 'white'}}>
                   (02) 9792 6655
-                </Typography>
-              </Box>
-            </Box>
-
-            <Box sx={{display: 'flex', alignItems: 'center', gap: '15px'}}>
-              <Mail 
-                sx={{ 
-                  color: 'white', 
-                  width: '18px', 
-                  position: 'relative', 
-                  bottom: '1px'
-                }} 
-              />
-              <Box>
-                <Typography variant='body2' sx={{color: 'white', fontSize: '0.6em'}}>
-                  Email
-                </Typography>  
-                <Typography variant='body2' sx={{color: 'white'}}>
-                  mdplus.reception@gmail.com
                 </Typography>
               </Box>
             </Box>

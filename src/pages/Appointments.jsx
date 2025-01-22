@@ -68,23 +68,22 @@ function Appointments() {
           display: 'flex', 
           alignItems: 'stretch', 
           gap: '30px', 
-          justifyContent: 'space-between', 
           flexDirection: 'column', 
           width: '50%', 
           flexGrow: 2
         }}
       >
-          <Paper sx={{padding: '30px'}}>
+          <Paper sx={{padding: '30px', flexGrow: 3}}>
             <Stack direction='row' gap='10px'>
               <PhoneInTalkRounded sx={{width: '30px', height: 'auto', position: 'relative', bottom: '10px'}}/>
               <Typography variant='h5' sx={{paddingBottom: '20px'}}> Telephone Access </Typography>
             </Stack>
             <Typography variant='body1'> 
-              GPs in the practice can be contacted during normal opening hours. If the the GP is with a patient, the reception staff will take your message and give you a timeframe for when the GP would be able to return your call. In an emergency, your call will always be put through to a GP.
+              GPs in the practice can be contacted during normal opening hours. If the the GP is with a patient, the reception staff will take your message and give you a timeframe for when the GP would be able to return your call. In an emergency, please call 000.
             </Typography>
           </Paper>
 
-          <Paper sx={{padding: '30px'}}>
+          <Paper sx={{padding: '30px', flexGrow: 3}}>
             <Stack direction='row' gap='10px'>
               <Assignment sx={{width: '30px', height: 'auto', position: 'relative', bottom: '10px'}}/>
               <Typography variant='h5' sx={{paddingBottom: '20px'}}> Getting the Results of Tests and Procedures </Typography>
@@ -94,7 +93,7 @@ function Appointments() {
             </Typography>
           </Paper>
 
-          <Paper sx={{padding: '30px'}}>
+          <Paper sx={{padding: '30px', flexGrow: 3}}>
             <Stack direction='row' gap='10px'>
               <Home sx={{width: '30px', height: 'auto', position: 'relative', bottom: '10px'}}/>
               <Typography variant='h5' sx={{paddingBottom: '20px'}}> Home Visits </Typography>
@@ -144,11 +143,10 @@ function Appointments() {
             <ListItem sx={{ display: 'list-item' }}>Care plans</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Family planning</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Worker’s Compensation</ListItem>
+            <ListItem sx={{ display: 'list-item' }}>Ear syringing</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Pregnancy tests</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Counselling</ListItem>
-            <ListItem sx={{ display: 'list-item' }}>Minor surgery  
-              <Typography variant='body2'>(eg. stitching cuts, ear cleans, etc.)</Typography>
-            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>Wound care & dressing</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Nutritional advice</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Sports medicine</ListItem>
             <ListItem sx={{ display: 'list-item' }}>Skin checks</ListItem>

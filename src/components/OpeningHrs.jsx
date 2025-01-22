@@ -32,7 +32,7 @@ function OpeningHrs() {
           </TableRow>
           <TableRow>
             <TableCell align="left" sx={{fontWeight: 'bold'}}>Sunday*</TableCell>
-            <TableCell align="left">9am-11:30am</TableCell>
+            <TableCell align="left">9am-12am</TableCell>
           </TableRow>
         </TableBody>
       </Table>
