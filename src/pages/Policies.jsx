@@ -24,7 +24,8 @@ function Policies() {
             padding: '30px',  
             display: 'flex', 
             alignItems: 'stretch', 
-            flexDirection: 'column' 
+            flexDirection: 'column', 
+            flexGrow: 1
           }}
         >
           <Stack direction='row' gap='10px'>

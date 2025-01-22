@@ -162,6 +162,7 @@ function Home() {
             alignItems: 'center', 
             width: '80vw', 
             flexWrap: 'wrap', 
+            justifyContent: 'space-evenly',
             ['@media (max-width: 1030px)']: {justifyContent: 'center'}
           }}
         >
