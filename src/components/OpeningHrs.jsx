@@ -36,9 +36,24 @@ function OpeningHrs() {
           </TableRow>
         </TableBody>
       </Table>
-      <Typography variant='body2' sx={{paddingTop: '20px', color: 'error.main'}}>* We are closed on the first and last Sundays of each month </Typography>
-      <Typography variant='body2' sx={{paddingTop: '10px',}}>For care outside of normal opening hours, call </Typography>
-      <Typography variant='body2' sx={{fontWeight: 'bold'}}>Sydney Medical Service: 1300 HOME GP (1300 4663 47) </Typography>
+      <Typography 
+        variant='body2' 
+        sx={{paddingTop: '20px', color: 'error.main'}}
+      >
+        * We are closed on the first and last Sundays of each month 
+      </Typography>
+      <Typography 
+        variant='body2' 
+        sx={{paddingTop: '10px'}}
+      >
+        For care outside of normal opening hours, call 
+      </Typography>
+      <Typography 
+        variant='body2' 
+        sx={{fontWeight: 'bold'}}
+      >
+        Sydney Medical Service: 1300 HOME GP (1300 4663 47)
+      </Typography>
       </>
     )
   }

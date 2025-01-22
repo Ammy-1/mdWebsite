@@ -3,16 +3,20 @@ import { AppBar, Toolbar, Typography, Tabs, Tab, Divider, Box, CardMedia, Stack,
 import { PhoneRounded, Place, ArrowDropDown, ArrowDropUp, MenuRounded } from '@mui/icons-material';
 import { Link, useLocation } from "react-router-dom";
 import BookBtn from './BookBtn';
+import logoImg from '../assets/mdplus logo 231110.jpg'
 
 function NavBar() {
-  const tabs = {
-    color: 'white'
-  }
-  const [dropServices, setDropServices] = useState(false);
+
   const [anchorElService, setAnchorElService] = useState(null);
   const serviceOpen = Boolean(anchorElService);
+
+  const [anchorElMobile, setAnchorElMobile] = useState(null);
+  const mobileOpen = Boolean(anchorElMobile);
+
   const location = useLocation(); 
   const [value, setValue] = useState(0);
+
+  const [dropServices, setDropServices] = useState(false);
 
   const dropServicesOpen = () => {
     setDropServices(prevState => !prevState);
@@ -30,9 +34,8 @@ function NavBar() {
     setAnchorElService(null);
   };
 
-  const [anchorElMobile, setAnchorElMobile] = useState(null);
-  const mobileOpen = Boolean(anchorElMobile);
-
+  // handles hamburger menu on mobile screens (>1000px wide)
+ 
   const handleMobileOpen = (event) => {
     if (!anchorElMobile) {
       setAnchorElMobile(event.currentTarget);
@@ -69,26 +72,79 @@ function NavBar() {
   
   return (
     <>
-      <AppBar position="fixed" sx={{backgroundColor: '#11225A'}} elevation={15}>
+      <AppBar 
+        position="fixed" 
+        sx={{backgroundColor: '#11225A'}} 
+        elevation={15}
+      >
         <Box sx={{backgroundColor: 'white',  height: '37px'}}>
-          <Box sx={{height: '17px', display: 'flex', justifyContent: 'flex-end', gap: '10px', position: 'relative', top: '10px', right: '25px', ['@media (max-width: 450px)']: {gap: '5px', right: '30px'}}}>
+          <Box 
+            sx={{
+              height: '17px', 
+              display: 'flex', 
+              justifyContent: 'flex-end', 
+              gap: '10px', 
+              position: 'relative', 
+              top: '10px', right: '25px', 
+              ['@media (max-width: 450px)']: {gap: '5px', right: '30px'}
+            }}
+          >
           
-            <Stack direction='row' gap='20px' sx={{['@media (max-width: 450px)']: {gap: '10px'}}}>
-              <Stack  direction='row' gap='15px' sx={{['@media (max-width: 450px)']: {gap: '5px'}}}>
-                <Place sx={{color: '#11225A', width: '18px', position: 'relative', bottom: '2px', ['@media (max-width: 450px)']: {width: '15px', bottom: '5px'}}} />
+            <Stack 
+              direction='row' 
+              gap='20px' 
+              sx={{['@media (max-width: 450px)']: {gap: '10px'}}}
+            >
+              <Stack 
+                direction='row' 
+                gap='15px' 
+                sx={{['@media (max-width: 450px)']: {gap: '5px'}}}
+              >
+                <Place 
+                  sx={{
+                    color: '#11225A', 
+                    width: '18px', 
+                    position: 'relative', 
+                    bottom: '2px', 
+                    ['@media (max-width: 450px)']: {width: '15px', bottom: '5px'}
+                  }}
+                />
                 <Typography
-                variant="body2"
-                sx={{color:  '#11225A', ['@media (max-width: 450px)']: {fontSize: '0.7rem'}}}
+                  variant="body2"
+                  sx={{color:  '#11225A', ['@media (max-width: 450px)']: {fontSize: '0.7rem'}}}
                 > 
                   65 Howard Rd, Padstow 2211
                 </Typography>
-
               </Stack>
           
-              <Divider orientation='vertical' sx={{ borderColor: '#11225A', borderWidth: '1px', borderRight: 'none', borderTop: 'none', borderBottom: 'none', position: 'relative', top: '2px'}} flexItem/> 
+              <Divider 
+                orientation='vertical' 
+                sx={{ 
+                  borderColor: '#11225A', 
+                  borderWidth: '1px', 
+                  borderRight: 'none', 
+                  borderTop: 'none', 
+                  borderBottom: 'none', 
+                  position: 'relative', 
+                  top: '2px'
+                }} 
+                flexItem
+              /> 
               
-              <Stack direction='row' gap='15px' sx={{['@media (max-width: 450px)']: {gap: '5px'}}}>
-                <PhoneRounded sx={{color: '#11225A', width: '18px', position: 'relative', bottom: '1px', ['@media (max-width: 450px)']: {width: '15px', bottom: '5px'}}} />
+              <Stack 
+                direction='row' 
+                gap='15px' 
+                sx={{['@media (max-width: 450px)']: {gap: '5px'}}}
+              >
+                <PhoneRounded 
+                  sx={{
+                    color: '#11225A', 
+                    width: '18px', 
+                    position: 'relative', 
+                    bottom: '1px', 
+                    ['@media (max-width: 450px)']: {width: '15px', bottom: '5px'}
+                  }}
+                />
                 <Typography
                   variant="body2"
                   sx={{color:  '#11225A', ['@media (max-width: 450px)']: {fontSize: '0.7rem'}}}
@@ -100,18 +156,48 @@ function NavBar() {
           </Box>
         </Box>
 
-          <Toolbar sx={{height: '64px', display: 'flex', justifyContent: 'space-between'}}>
-            <CardMedia variant='outlined' sx={{minWidth: '149px', height: '45px', border: '2px solid whitesmoke', position: 'relative', left: '30px'}}
-              image='mdplus logo 231110.jpg' title='mdplus logo' 
+          <Toolbar 
+            sx={{
+              height: '64px', 
+              display: 'flex', 
+              justifyContent: 'space-between'
+            }}
+          >
+            <CardMedia 
+              variant='outlined' 
+              sx={{
+                minWidth: '149px', 
+                height: '45px', 
+                border: '2px solid whitesmoke', 
+                position: 'relative', 
+                left: '30px'
+              }}
+              image={logoImg} 
+              title='mdplus logo' 
             />
-            <Tabs sx={{position: 'relative', '& .MuiTabs-indicator': {backgroundColor: 'white'}, color: 'inherit', height: '65px', ['@media (max-width: 1025px)']: {display: 'none'}}}  value={value} >
-              <Tab style={tabs} label="Home" component={Link} to='/' tabIndex={0} />
-              <Tab style={tabs} label="Services" onClick={handleServicesOpen} tabIndex={0} icon={serviceOpen ? <ArrowDropUp/> : <ArrowDropDown/>} iconPosition='end' /> 
+            <Tabs 
+              sx={{
+                position: 'relative',
+                '& .MuiTabs-indicator': {backgroundColor: 'white'},
+                color: 'inherit',
+                height: '65px',
+                ['@media (max-width: 1025px)']: {display: 'none'}
+              }}  
+              value={value} 
+            >
+              <Tab label="Home" component={Link} to='/' tabIndex={0} 
+              />
+              <Tab 
+                label="Services" 
+                onClick={handleServicesOpen} 
+                tabIndex={0} 
+                icon={serviceOpen ? <ArrowDropUp/> : <ArrowDropDown/>} 
+                iconPosition='end' 
+              /> 
                 <Menu
                   id="services-menu"
                   anchorEl={anchorElService}
                   open={serviceOpen}
-    
                   onClose={handleServiceClose}
                   TransitionComponent={Fade}
                   
@@ -121,7 +207,11 @@ function NavBar() {
                     'sx': { width: anchorElService && anchorElService.offsetWidth}
                   }}
                   
-                  sx={{position: 'absolute', top: '-8px', '& .MuiPaper-root': { borderTopLeftRadius: '0', borderTopRightRadius: '0'} }}
+                  sx={{
+                    position: 'absolute', 
+                    top: '-8px', 
+                    '& .MuiPaper-root': { borderTopLeftRadius: '0', borderTopRightRadius: '0'}
+                  }}
                 >
                   <MenuItem onClick={handleServiceClose} component={Link} to='/services/appointments' >Appointments</MenuItem>
                   <MenuItem onClick={handleServiceClose} component={Link} to='/services/fees'>Fees</MenuItem>
@@ -129,9 +219,9 @@ function NavBar() {
                   
                 </Menu>
               
-              <Tab style={tabs} label="Contact Us" component={Link} to='/contact' tabIndex={0}/> 
-              <Tab style={tabs} label="Notices" component={Link} to='/notices' tabIndex={0}/> 
-              <Tab style={tabs} label="Resources"component={Link} to='/resources' tabIndex={0}/>
+              <Tab label="Contact Us" component={Link} to='/contact' tabIndex={0}/> 
+              <Tab label="Notices" component={Link} to='/notices' tabIndex={0}/> 
+              <Tab label="Resources"component={Link} to='/resources' tabIndex={0}/>
             </Tabs>
             
           <Box sx={{['@media (max-width: 1025px)']: {display: 'none'}}}>
