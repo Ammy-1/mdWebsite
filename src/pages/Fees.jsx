@@ -46,10 +46,10 @@ function Fees() {
             </Stack>
          
           <Typography sx={{marginBottom: '10px', textWrap: 'wrap'}}>
-            Fees are payable at the time of consultation by cash, cheque, Mastercard or Visa. The AMA fee structure forms the basis of our billing policy and is displayed at the clinic&apos;s reception area
+            Fees are payable at the time of consultation by cash, cheque, Mastercard or Visa. The AMA fee structure forms the basis of our billing policy and is displayed at the clinic&apos;s reception area.
           </Typography>
           <Typography sx={{marginBottom: '10px',  textWrap: 'wrap'}}>
-            This practice bulk billschildren under 16 yrs old, pensioners and Health Care card holders. Veterans may sign the service voucher. Sunday appointments have a gap fee of $25 (standard consultation) or $30 (long consultation). 
+            On Sundays, this practice bulk bills children under 16 yrs old, pensioners, Health Care card holders and veterans. Non-bulk billing consultations have a gap fee of $25 (standard consultation), $30 (long consultation) or $35 (prolonged consultation). 
           </Typography>
           <Typography sx={{marginBottom: '10px', fontWeight: 'bold'}}>
             If you have any difficulties with paying our fees, please discuss it with us.
@@ -204,7 +204,7 @@ function Fees() {
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">36</TableCell>
-                    <TableCell className='fee-cell' align="left">New Patient (Extended Consultation)</TableCell>
+                    <TableCell className='fee-cell' align="left">New Patient (Long Consultation)</TableCell>
                     <TableCell className='fee-cell' align="left">$112.90</TableCell>
                     <TableCell className='fee-cell' align="left">$82.90</TableCell>
                     <TableCell className='fee-cell' align="left">$30</TableCell>
@@ -224,11 +224,18 @@ function Fees() {
                     <TableCell className='fee-cell' align="left">$30</TableCell>
                   </TableRow>
                   <TableRow>
+                    <TableCell className='fee-cell' align="left">5060</TableCell>
+                    <TableCell className='fee-cell' align="left">Sunday Appointment (Prolonged Consultation)</TableCell>
+                    <TableCell className='fee-cell' align="left">$169.20</TableCell>
+                    <TableCell className='fee-cell' align="left">$134.20</TableCell>
+                    <TableCell className='fee-cell' align="left">$35</TableCell>
+                  </TableRow>
+                  <TableRow>
                     <TableCell className='fee-cell' align="left">-</TableCell>
                     <TableCell className='fee-cell' align="left">Forms</TableCell>
-                    <TableCell className='fee-cell' align="left">$44</TableCell>
+                    <TableCell className='fee-cell' align="left">min. $44</TableCell>
                     <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$44</TableCell>
+                    <TableCell className='fee-cell' align="left"> min. $44</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">#23</TableCell>
@@ -239,14 +246,14 @@ function Fees() {
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">#36</TableCell>
-                    <TableCell className='fee-cell' align="left">Extended Consultation (No Medicare)</TableCell>
+                    <TableCell className='fee-cell' align="left">Long Consultation (No Medicare)</TableCell>
                     <TableCell className='fee-cell' align="left">$105</TableCell>
                     <TableCell className='fee-cell' align="left">$0</TableCell>
                     <TableCell className='fee-cell' align="left">$105</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">#44</TableCell>
-                    <TableCell className='fee-cell' align="left">Long Consultation (No Medicare)</TableCell>
+                    <TableCell className='fee-cell' align="left">Prolonged Consultation (No Medicare)</TableCell>
                     <TableCell className='fee-cell' align="left">$150</TableCell>
                     <TableCell className='fee-cell' align="left">$0</TableCell>
                     <TableCell className='fee-cell' align="left">$150</TableCell>
@@ -260,14 +267,14 @@ function Fees() {
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">#5040</TableCell>
-                    <TableCell className='fee-cell' align="left">Extended After-hour (No Medicare)</TableCell>
+                    <TableCell className='fee-cell' align="left">Long After-hour (No Medicare)</TableCell>
                     <TableCell className='fee-cell' align="left">$132</TableCell>
                     <TableCell className='fee-cell' align="left">$0</TableCell>
                     <TableCell className='fee-cell' align="left">$132</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className='fee-cell' align="left">#5060</TableCell>
-                    <TableCell className='fee-cell' align="left">Long After-hours (No Medicare)</TableCell>
+                    <TableCell className='fee-cell' align="left">Prolonged After-hours (No Medicare)</TableCell>
                     <TableCell className='fee-cell' align="left">$178</TableCell>
                     <TableCell className='fee-cell' align="left">$0</TableCell>
                     <TableCell className='fee-cell' align="left">$178</TableCell>
