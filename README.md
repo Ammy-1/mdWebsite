@@ -59,7 +59,7 @@ Fees have 5 fields that need to be filled:
 - rebate: the medicare rebate (if not relevant use a $0)
 - cost: the out of pocket cost
 
-Update the fees table similarly to the notices by creating a new fees object and adding it to the file **between** the square brackets. Ensure that there is a comma between each object and Mkae sure to save the file to see the updated fees table. An example of a fees object is shown below:
+Update the fees table similarly to the notices by creating a new fees object and adding it to the file **between** the square brackets. Ensure that there is a comma between each object and make sure to save the file to see the updated fees table. An example of a fees object is shown below:
 
 ```
 {
