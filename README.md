@@ -61,7 +61,7 @@ Fees have 5 fields that need to be filled:
 
 Update the fees table similarly to the notices by creating a new fees object and adding it to the file **between** the square brackets. Ensure that there is a comma between each object and Mkae sure to save the file to see the updated fees table. An example of a fees object is shown below:
 
-'''
+```
 {
     "item":"721",
     "description": "Health Care Plan (HCP)",
@@ -69,7 +69,7 @@ Update the fees table similarly to the notices by creating a new fees object and
     "rebate":"$164.35",
     "cost":"$40"
 }
-'''
+```
 
 
             
