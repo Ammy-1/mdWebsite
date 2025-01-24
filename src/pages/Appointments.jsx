@@ -52,7 +52,7 @@ function Appointments() {
             Please ring 9792 6655 or click the button below to book an appointment.
           </Typography>
           <Typography sx={{marginBottom: '20px'}}>
-            Every effort will be made to accomodate your preferred time. Emergencies will always be given priority and our reception staff will attempt to contact you if there is any unforseen delay. Longer consultations are avaliable, so please ask our receptionists if you require some extra time. If you or a family member requires an interpreter service, let us know so we can organise this for you.
+            Every effort will be made to accomodate your preferred time. If appointments are not avaliable, we can add your name to our cancellation list and contact you if any appointment times open up.
           </Typography>
           <Typography sx={{marginBottom: '20px', color: 'error.main'}}>
             Please be aware that certain appointments/services have an attached fee. 
@@ -79,7 +79,7 @@ function Appointments() {
               <Typography variant='h5' sx={{paddingBottom: '20px'}}> Telephone Access </Typography>
             </Stack>
             <Typography variant='body1'> 
-              GPs in the practice can be contacted during normal opening hours. If the the GP is with a patient, the reception staff will take your message and give you a timeframe for when the GP would be able to return your call. In an emergency, please call 000.
+              GP in the practice can be contacted during normal opening hours. If the the GP is with a patient, the reception staff will take your message and give you a timeframe for when the GP would be able to return your call. In an emergency, please call 000.
             </Typography>
           </Paper>
 
@@ -89,7 +89,7 @@ function Appointments() {
               <Typography variant='h5' sx={{paddingBottom: '20px'}}> Getting the Results of Tests and Procedures </Typography>
             </Stack>
             <Typography variant='body1'>
-              We will contact you when your results arrive at the practice. Please book a follow up appointment with your doctor to discuss your results and, if needed, plan the next steps in your care.
+              We will contact you if you require a follow-up appointment when we receive your results. Please book a follow up appointment with your doctor to discuss your results and, if needed, plan the next steps in your care.
             </Typography>
           </Paper>
 
@@ -100,7 +100,7 @@ function Appointments() {
             </Stack>
             
             <Typography variant='body1'>
-              Home visits are only avaliable for regular patients of this practice whose conditions prevents them from visiting the surgery. These visits are subject to the GP&apos;s discretion.
+              Home visits are only avaliable for regular patients. These visits are subject to the GP&apos;s discretion.
             </Typography>
           </Paper>
         </Box>

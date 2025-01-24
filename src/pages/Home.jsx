@@ -1,7 +1,7 @@
 import {Typography, Button, Box, List, ListItem, Paper, Stack } from '@mui/material';
 import BookBtn from '../components/BookBtn';
 import NotifCard from '../components/NotifCard';
-import notifs from '../notifsMaster.json';
+import notifs from '../dataMasters/notifsMaster.json';
 import {Link} from 'react-router-dom';
 import OpeningHrs from '../components/OpeningHrs';
 import { Announcement } from '@mui/icons-material';
@@ -101,7 +101,7 @@ function Home() {
             padding: '30px 0px 30px'
           }}
         >
-          Dr Tam Pham has over 25 years experience in all aspects of general practice, specialising in paediatrics, sports medicine and men’s health. Appointments can be made either through phone bookings to <span style={{color: '#d32f2f'}}>(02) 9792 6655 </span>or our website.
+          Dr Tam Pham has over 25 years experience in all aspects of general practice, specialising in paediatrics, sports medicine and men’s health. Appointments can be made either through phone bookings to <span style={{color: '#d32f2f'}}>(02) 9792 6655 </span>or our HotDoc page. This page can be accessed via the &quot;Book Appointment&quot; button on our website.
         </Typography>
         
         <Box 

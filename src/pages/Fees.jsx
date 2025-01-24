@@ -1,5 +1,6 @@
 import { Box, Paper, Table, TableHead, TableRow, TableCell, Typography, Stack, TableBody} from '@mui/material';
 import { AccountBalanceWallet, PointOfSale, } from '@mui/icons-material';
+import fees from '../dataMasters/feesMaster.json';
 
 function Fees() {
   
@@ -45,11 +46,8 @@ function Fees() {
               <Typography variant='h4' sx={{paddingBottom: '20px'}}> Fees and Billing Arrangements </Typography>
             </Stack>
          
-          <Typography sx={{marginBottom: '10px', textWrap: 'wrap'}}>
-            Fees are payable at the time of consultation by cash, cheque, Mastercard or Visa. The AMA fee structure forms the basis of our billing policy and is displayed at the clinic&apos;s reception area.
-          </Typography>
           <Typography sx={{marginBottom: '10px',  textWrap: 'wrap'}}>
-            On Sundays, this practice bulk bills children under 16 yrs old, pensioners, Health Care card holders and veterans. Non-bulk billing consultations have a gap fee of $25 (standard consultation), $30 (long consultation) or $35 (prolonged consultation). 
+          Fees are payable at the time of consultation. On Sundays, this practice bulk bills children under 16 yrs old, pensioners, Health Care card holders and veterans. Non-bulk billing consultations have a gap fee of $25 (standard consultation), $30 (long consultation) or $35 (prolonged consultation). 
           </Typography>
           <Typography sx={{marginBottom: '10px', fontWeight: 'bold'}}>
             If you have any difficulties with paying our fees, please discuss it with us.
@@ -146,146 +144,15 @@ function Fees() {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">721</TableCell>
-                    <TableCell className='fee-cell' align="left">Health Care Plan (HCP)</TableCell>
-                    <TableCell className='fee-cell' align="left">$204.35</TableCell>
-                    <TableCell className='fee-cell' align="left">$164.35</TableCell>
-                    <TableCell className='fee-cell' align="left">$40</TableCell>
+                  { fees.map((feeItem, index) => (
+                    <TableRow key={index}>
+                      <TableCell className='fee-cell' align="left">{feeItem.item}</TableCell>
+                      <TableCell className='fee-cell' align="left">{feeItem.description}</TableCell>
+                      <TableCell className='fee-cell' align="left">{feeItem.fee}</TableCell>
+                      <TableCell className='fee-cell' align="left">{feeItem.rebate}</TableCell>
+                      <TableCell className='fee-cell' align="left">{feeItem.cost}</TableCell>
                   </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">732</TableCell>
-                    <TableCell className='fee-cell' align="left">HCP review</TableCell>
-                    <TableCell className='fee-cell' align="left">$122.10</TableCell>
-                    <TableCell className='fee-cell' align="left">$82.10</TableCell>
-                    <TableCell className='fee-cell' align="left">$40</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">2712</TableCell>
-                    <TableCell className='fee-cell' align="left">Mental Healthcare Plan review</TableCell>
-                    <TableCell className='fee-cell' align="left">$121.70</TableCell>
-                    <TableCell className='fee-cell' align="left">$103.70</TableCell>
-                    <TableCell className='fee-cell' align="left">$40</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">-</TableCell>
-                    <TableCell className='fee-cell' align="left">Ear Syringing</TableCell>
-                    <TableCell className='fee-cell' align="left">$30 for 1,  $40 for 2</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$30 for 1,  $40 for 2</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">-</TableCell>
-                    <TableCell className='fee-cell' align="left">Cyro Forceps</TableCell>
-                    <TableCell className='fee-cell' align="left">$44</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$44</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">-</TableCell>
-                    <TableCell className='fee-cell' align="left">Non-commercial Driver License</TableCell>
-                    <TableCell className='fee-cell' align="left">$44</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$44</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">-</TableCell>
-                    <TableCell className='fee-cell' align="left">Commercial Driver License</TableCell>
-                    <TableCell className='fee-cell' align="left">$220</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$220</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">23</TableCell>
-                    <TableCell className='fee-cell' align="left">New Patient (Standard Consultation)</TableCell>
-                    <TableCell className='fee-cell' align="left">$89</TableCell>
-                    <TableCell className='fee-cell' align="left">$59</TableCell>
-                    <TableCell className='fee-cell' align="left">$30</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">36</TableCell>
-                    <TableCell className='fee-cell' align="left">New Patient (Long Consultation)</TableCell>
-                    <TableCell className='fee-cell' align="left">$112.90</TableCell>
-                    <TableCell className='fee-cell' align="left">$82.90</TableCell>
-                    <TableCell className='fee-cell' align="left">$30</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">5020</TableCell>
-                    <TableCell className='fee-cell' align="left">Sunday Appointment (Standard Consultation)</TableCell>
-                    <TableCell className='fee-cell' align="left">$80.80</TableCell>
-                    <TableCell className='fee-cell' align="left">$55.80</TableCell>
-                    <TableCell className='fee-cell' align="left">$25</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">5040</TableCell>
-                    <TableCell className='fee-cell' align="left">Sunday Appointment (Long Consultation)</TableCell>
-                    <TableCell className='fee-cell' align="left">$125.70</TableCell>
-                    <TableCell className='fee-cell' align="left">$95.70</TableCell>
-                    <TableCell className='fee-cell' align="left">$30</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">5060</TableCell>
-                    <TableCell className='fee-cell' align="left">Sunday Appointment (Prolonged Consultation)</TableCell>
-                    <TableCell className='fee-cell' align="left">$169.20</TableCell>
-                    <TableCell className='fee-cell' align="left">$134.20</TableCell>
-                    <TableCell className='fee-cell' align="left">$35</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">-</TableCell>
-                    <TableCell className='fee-cell' align="left">Forms</TableCell>
-                    <TableCell className='fee-cell' align="left">min. $44</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left"> min. $44</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">#23</TableCell>
-                    <TableCell className='fee-cell' align="left">Standard Consultation (No Medicare)</TableCell>
-                    <TableCell className='fee-cell' align="left">$66.60</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$66.60</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">#36</TableCell>
-                    <TableCell className='fee-cell' align="left">Long Consultation (No Medicare)</TableCell>
-                    <TableCell className='fee-cell' align="left">$105</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$105</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">#44</TableCell>
-                    <TableCell className='fee-cell' align="left">Prolonged Consultation (No Medicare)</TableCell>
-                    <TableCell className='fee-cell' align="left">$150</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$150</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">#5020</TableCell>
-                    <TableCell className='fee-cell' align="left">Standard After-hour (No Medicare)</TableCell>
-                    <TableCell className='fee-cell' align="left">$88.80</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$88.80</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">#5040</TableCell>
-                    <TableCell className='fee-cell' align="left">Long After-hour (No Medicare)</TableCell>
-                    <TableCell className='fee-cell' align="left">$132</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$132</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">#5060</TableCell>
-                    <TableCell className='fee-cell' align="left">Prolonged After-hours (No Medicare)</TableCell>
-                    <TableCell className='fee-cell' align="left">$178</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$178</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell className='fee-cell' align="left">DNA fee</TableCell>
-                    <TableCell className='fee-cell' align="left">Late cancellation (less than 24hrs)</TableCell>
-                    <TableCell className='fee-cell' align="left">$22</TableCell>
-                    <TableCell className='fee-cell' align="left">$0</TableCell>
-                    <TableCell className='fee-cell' align="left">$22</TableCell>
-                  </TableRow>
+                  ))}
                 </TableBody>
               </Table>
             </Box>

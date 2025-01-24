@@ -1,5 +1,5 @@
 import {  Typography, Box, Card, Stack } from '@mui/material';
-import notifs from '../notifsMaster.json';
+import notifs from '../dataMasters/notifsMaster.json';
 import NotifCard from '../components/NotifCard';
 import { Announcement } from '@mui/icons-material';
 

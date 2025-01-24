@@ -1,0 +1,142 @@
+[
+    {
+        "item":"721",
+        "description": "Health Care Plan (HCP)",
+        "fee":"$204.35",
+        "rebate":"$164.35",
+        "cost":"$40"
+    },
+    {
+        "item":"732",
+        "description": "HCP review",
+        "fee":"$122.10",
+        "rebate":"$82.10",
+        "cost":"$40"
+    },
+    {
+        "item":"2712",
+        "description": "Mental Healthcare Plan review",
+        "fee":"$121.70",
+        "rebate":"$103.70",
+        "cost":"$40"
+    },
+    {
+        "item":"-",
+        "description": "Ear Syringing",
+        "fee":"$30 for 1,  $40 for 2",
+        "rebate":"$0",
+        "cost":"$30 for 1,  $40 for 2"
+    },
+    {
+        "item":"-",
+        "description": "Cyro Forceps",
+        "fee":"$44",
+        "rebate":"$0",
+        "cost":"$44"
+    },
+    {
+        "item":"-",
+        "description": "Non-commercial Driver License",
+        "fee":"$44",
+        "rebate":"$0",
+        "cost":"$44"
+    },
+    {
+        "item":"-",
+        "description": "Commercial Driver License",
+        "fee":"$220",
+        "rebate":"$0",
+        "cost":"$220"
+    },
+    {
+        "item":"23",
+        "description": "New Patient (Standard Consultation)",
+        "fee":"$89",
+        "rebate":"$59",
+        "cost":"$30"
+    },
+    {
+        "item":"36",
+        "description": "New Patient (Long Consultation)",
+        "fee":"$112.90",
+        "rebate":"$82.90",
+        "cost":"$30"
+    },
+    {
+        "item":"5020",
+        "description": "Sunday Appointment (Standard Consultation)",
+        "fee":"$80.80",
+        "rebate":"$55.80",
+        "cost":"$25"
+    },
+    {
+        "item":"5040",
+        "description": "Sunday Appointment (Long Consultation)",
+        "fee":"$125.70",
+        "rebate":"$95.70",
+        "cost":"$30"
+    },
+    {
+        "item":"5060",
+        "description": "Sunday Appointment (Prolonged Consultation)",
+        "fee":"$169.20",
+        "rebate":"$134.20",
+        "cost":"$35"
+    },
+    {
+        "item":"-",
+        "description": "Forms",
+        "fee":"min. $44",
+        "rebate":"$0",
+        "cost":"min. $44"
+    },
+    {
+        "item":"#23",
+        "description": "Standard Consultation (No Medicare)",
+        "fee":"$66.60",
+        "rebate":"$0",
+        "cost":"$66.60"
+    },
+    {
+        "item":"#36",
+        "description": "Long Consultation (No Medicare)",
+        "fee":"$105",
+        "rebate":"$0",
+        "cost":"$105"
+    },
+    {
+        "item":"#44",
+        "description": "Prolonged Consultation (No Medicare)",
+        "fee":"$150",
+        "rebate":"$0",
+        "cost":"$150"
+    },
+    {
+        "item":"#5020",
+        "description": "Standard After-hour (No Medicare)",
+        "fee":"$88.80",
+        "rebate":"$0",
+        "cost":"$88.80"
+    },
+    {
+        "item":"#5040",
+        "description": "Long After-hour (No Medicare)",
+        "fee":"$132",
+        "rebate":"$0",
+        "cost":"$132"
+    },
+    {
+        "item":"#5060",
+        "description": "Prolonged After-hours (No Medicare)",
+        "fee":"$178",
+        "rebate":"$0",
+        "cost":"$178"
+    },
+    {
+        "item":"DNA fee",
+        "description": "Late cancellation (less than 24hrs)",
+        "fee":"$22",
+        "rebate":"$0",
+        "cost":"$22"
+    }
+]

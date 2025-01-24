@@ -42,6 +42,12 @@ function OpeningHrs() {
       >
         * We are closed on the first and last Sundays of each month 
       </Typography>
+       <Typography 
+        variant='body2' 
+        sx={{paddingTop: '20px', fontWeight: 'bold'}}
+      >
+        We are closed from 1pm-2:30pm.
+      </Typography>
       <Typography 
         variant='body2' 
         sx={{paddingTop: '10px'}}
