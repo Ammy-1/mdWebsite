@@ -13,12 +13,10 @@ import Fees from './pages/Fees.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
-
-
-
+  
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/mdWebsite'>
         <NavBar/>
         <ScrollToTop/>
         <Routes>
