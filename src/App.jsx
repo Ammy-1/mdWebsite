@@ -1,6 +1,6 @@
 import './App.css';
 
-import {BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, Routes, Route } from "react-router-dom";
 import NavBar from './components/NavBar.jsx';
 import MdFooter from './components/MdFooter.jsx';
 import Home from './pages/Home.jsx';
@@ -16,7 +16,7 @@ function App() {
   
   return (
     <>
-      <BrowserRouter basename='/mdWebsite'>
+      <HashRouter >
         <NavBar/>
         <ScrollToTop/>
         <Routes>
@@ -32,7 +32,7 @@ function App() {
 
         <MdFooter/>
 
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
