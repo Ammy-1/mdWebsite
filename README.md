@@ -1,6 +1,16 @@
 # MDPLUS clinic website
 This file contains the code for the MDPLUS clinic website. This website is a single page application (SPA) created using React. 
 
+## Updating the site
+To update the website go to the terminal on `visual studio code`. This can be done by clicking on the button with 3 horizontal lines in the upper left corner of the app. This will bring a dropdown menu, then select `Terminal` then `new terminal`. 
+
+You should then see something like this appear on the app: `PS C:\Users\user1\Desktop>`. Since the website is in the folder `mdWebsite`, click on the terminal and add this line `cd mdWebsite`(and press `Enter`) to move into that folder. To confirm, a similar line to this should appear on your terminal: `PS C:\Users\user1\Desktop\mdWebsite>`. 
+
+Ensure that you have saved your changes using `CTRL + s` or similar on the files opened. Then go to the terminal and add the line `npm run deploy` (and press `Enter`). Many lines will appear on the terminal as the site is deployed but a successful deployment should end with the line `Published`. 
+
+Your site should now be updated. (Note: this may take a few minutes to appear on the website)
+
+
 ## Notices
 Notices are handled in the `notifsMaster.json` file which can be found in the `src` folder. Initially, the file is empty and looks like this:
 
@@ -48,8 +58,6 @@ To add additional notices, we create a notice object exactly the same as before 
 
 ### Deleting a notice
 Notices can easily be removed by deleting the corresponing notice object from the `notifsMaster.json` file. If this was the last notice on the file, remove the comma at the end of the new last notice.
-
-
 
 ## Fees table
 Fees have 5 fields that need to be filled:
